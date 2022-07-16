@@ -4,7 +4,7 @@ environment {
 AWS_ACCOUNT_ID="461805207254"
 AWS_DEFAULT_REGION="ap-southeast-1"
 IMAGE_REPO_NAME="jenkins-pipeline"
-IMAGE_TAG="image05"
+IMAGE_TAG="image06"
 REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
 }
 
