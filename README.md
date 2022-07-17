@@ -1,14 +1,16 @@
 # DevOps Challenges
 # Deploy GitHub, Jenkins, Docker, ECR, EKS and ELB with CaC
 
-Prerequisites and Testing Environment! AWS Account, Cli, EKS, kubectl, eksctl and RDS
 
-1. Create a new cluster and node in EKS 
-    * eksctl create cluster -f cluster-create.yaml 
-    * Connect with your cluster - aws eks update-kubeconfig --name your-clutser --region ap-southeast-1 
-    * Check all resources are ready - kubectl get all
+1. First, Fork the requirement repo - https://github.com/wariyakunatorn/azt_devops_challenges.git 
+      * Prepare and edit to work well when creating docker image like ./app/html in Dockerfile
 
-2. Create a RDS for wordpress - kubectl apply -f create-rds.yaml
+2. Second, add, commit and push to my own GitHub
+      * git add app Dockerfile Jenkinsfile
+      * git checkout -b 6branch
+git remote add project-anz https://github.com/komoelwinaung/project-anz.git
+git commit -m "this is new branch-6"
+git push --set-upstream project-anz 6branch
 
 3. Once RDS is ready, deploy a new pod for WordPress site 
     * kubectl apply -f wordpress-site.yaml
