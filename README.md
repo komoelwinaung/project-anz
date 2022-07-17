@@ -18,7 +18,7 @@
 5. Fifth, create and merge the pull request to master branch by engineer and that will be automatically done by Jenkins and push the created image to ECR. Also step-by-step are in Powerpoint.
 
 6. Sixth, configure aws cli in my Ubuntu and create the EKS cluster with yaml file and wait a couple of minutes.
-       *  eksctl create cluster -f cluster-anz.yaml
+*eksctl create cluster -f cluster-anz.yaml
        * aws eks update-kubeconfig --name cluster-anz --region ap-southeast-1
        * kubectl get all
        * kubectl apply -f nginx-anz.yaml
