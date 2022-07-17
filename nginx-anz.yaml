@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  selector:
+    matchLabels:
+      run: nginx-anz
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: nginx-anz
+    spec:
+      containers:
+      - name: nginx-anz
+        image: 461805207***.dkr.ecr.ap-southeast-1.amazonaws.com/jenkins-pipeline:image06
+        ports:
+        - containerPort: 80
