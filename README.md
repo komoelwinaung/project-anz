@@ -24,6 +24,10 @@
        * kubectl apply -f nginx-anz.yaml
        * kubectl expose deployment/nginx --port 8000 --name nginx-service --type LoadBalancer
        * kubectl get services nginx-service
-After that, we can browse the ELB url and that will be fine. Result screenshot is in Powerpoint.
+       
+7. After that, we can browse the ELB url and that will be fine. Result screenshot is in Powerpoint.
 
+8. Prepare and install Istio system in EKS and expose the service to outside. Also screenshots in in Powerpoint. 
+
+10. Another deployment of WordPress and RDS was done in my GitHub tutorial - https://github.com/komoelwinaung/wordpress_eks_with_rds Thank you!
 
