@@ -27,9 +27,9 @@ I've implemented and accomplished the following scenario for the required system
     - kubectl expose deployment/nginx --port 8000 --name nginx-service --type LoadBalancer
     - kubectl get services nginx-service
        
-7. After that, we can browse the ELB url and that will be fine. Result screenshots are in Powerpoint.
+7. BONUS: 1 We can browse the ELB url and that will be fine. Result screenshots are in Powerpoint.
 
-8. Prepare and install Istio system in EKS, deploy Sample BookApp and expose the application via ELB. Also screenshots are in Powerpoint. Some Commands are:
+8. BONUS: 2 Prepare and install Istio system in EKS, deploy sample BookApp and expose the application via ELB. Also screenshots are in Powerpoint. Some Commands are:
     - kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
     - kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}')" -c ratings -- curl -sS productpage:9080/productpage | grep -o "<title>.*</title>
     - kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
@@ -43,7 +43,7 @@ Thank you.
 
 ## Some Tutorials of my GitHub
 
-Another tutorials and testing results related with this scenarios:
+My tutorials and the finished results related with this scenarios:
  - https://github.com/komoelwinaung/sample-java-deployment-jenkins-sonartube.git 
  - https://github.com/komoelwinaung/installation-prometheus-grafana--monitor-eks-cluster.git 
  - https://github.com/komoelwinaung/ecs-blue-green-deployment.git
